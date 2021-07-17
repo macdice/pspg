@@ -1,0 +1,12 @@
+env:
+  CIRRUS_CLONE_DEPTH: 1
+
+task:
+  name: macOS
+  osx_instance:
+    image: big-sur-base
+  install_script:
+    - sudo brew install libpq ncurses
+  build_script:
+    - ./configure
+    - make
