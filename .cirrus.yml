@@ -6,7 +6,7 @@ env:
 task:
   name: macOS
   osx_instance:
-    image: big-sur-base
+    image: catalina-base
   install_script:
     - brew install libpq ncurses
   build_script:
