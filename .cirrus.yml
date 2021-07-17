@@ -8,7 +8,7 @@ task:
   osx_instance:
     image: catalina-base
   install_script:
-    - brew install libpq ncurses
+    - brew install libpq ncurses readline
   build_script:
     - ./configure
     - make
